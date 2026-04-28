@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sundog – Terms of Service</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+      background: #FFF8F0;
+      color: #3D2B1F;
+      line-height: 1.7;
+    }
+
+    header {
+      background: #E8913A;
+      padding: 40px 24px 32px;
+      text-align: center;
+    }
+
+    header .sun { font-size: 48px; margin-bottom: 10px; }
+
+    header h1 {
+      font-size: 28px;
+      font-weight: 800;
+      color: #fff;
+      letter-spacing: -0.5px;
+    }
+
+    header p {
+      color: rgba(255,255,255,0.85);
+      font-size: 15px;
+      margin-top: 6px;
+    }
+
+    .lang-toggle {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      padding: 18px 24px;
+      background: #FFF0E0;
+      border-bottom: 1px solid #E8C9A8;
+    }
+
+    .lang-toggle a {
+      font-size: 14px;
+      font-weight: 600;
+      color: #A0785A;
+      text-decoration: none;
+      padding: 6px 18px;
+      border-radius: 20px;
+      border: 1.5px solid #E8C9A8;
+      transition: all 0.15s;
+    }
+
+    .lang-toggle a:hover,
+    .lang-toggle a.active {
+      background: #E8913A;
+      color: #fff;
+      border-color: #E8913A;
+    }
+
+    .container {
+      max-width: 740px;
+      margin: 0 auto;
+      padding: 40px 24px 80px;
+    }
+
+    .lang-section { margin-bottom: 64px; }
+
+    .lang-label {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #E8913A;
+      border: 1.5px solid #E8913A;
+      border-radius: 4px;
+      padding: 3px 10px;
+      margin-bottom: 28px;
+    }
+
+    h2 {
+      font-size: 26px;
+      font-weight: 800;
+      color: #3D2B1F;
+      margin-bottom: 6px;
+      line-height: 1.3;
+      letter-spacing: -0.3px;
+    }
+
+    .effective {
+      font-size: 13px;
+      color: #A0785A;
+      margin-bottom: 28px;
+    }
+
+    .warning-banner {
+      background: #FFF5EB;
+      border: 2px solid #E8913A;
+      border-radius: 14px;
+      padding: 20px 22px;
+      margin-bottom: 28px;
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+    }
+
+    .warning-banner .icon { font-size: 24px; flex-shrink: 0; line-height: 1.5; }
+
+    .warning-banner p {
+      font-size: 15px;
+      color: #3D2B1F;
+      line-height: 1.65;
+    }
+
+    .warning-banner strong { color: #D4722A; }
+
+    section.tos-section {
+      background: #fff;
+      border-radius: 14px;
+      border: 1.5px solid #F0E0CC;
+      padding: 22px 22px 18px;
+      margin-bottom: 14px;
+    }
+
+    section.tos-section h3 {
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: #E8913A;
+      margin-bottom: 10px;
+    }
+
+    section.tos-section p {
+      font-size: 15px;
+      color: #3D2B1F;
+      line-height: 1.7;
+      margin-bottom: 10px;
+    }
+
+    section.tos-section p:last-child { margin-bottom: 0; }
+
+    section.tos-section ul {
+      padding-left: 20px;
+      margin-top: 6px;
+      margin-bottom: 10px;
+    }
+
+    section.tos-section ul li {
+      font-size: 15px;
+      color: #3D2B1F;
+      line-height: 1.7;
+      margin-bottom: 4px;
+    }
+
+    .liability-box {
+      background: #3D2B1F;
+      border-radius: 14px;
+      padding: 22px 22px 18px;
+      margin-bottom: 14px;
+    }
+
+    .liability-box h3 {
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: #E8913A;
+      margin-bottom: 10px;
+    }
+
+    .liability-box p {
+      font-size: 15px;
+      color: rgba(255,255,255,0.85);
+      line-height: 1.7;
+      margin-bottom: 10px;
+    }
+
+    .liability-box p:last-child { margin-bottom: 0; }
+
+    .contact-box {
+      background: #E8913A;
+      border-radius: 14px;
+      padding: 22px;
+      margin-bottom: 14px;
+      text-align: center;
+    }
+
+    .contact-box h3 {
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: rgba(255,255,255,0.75);
+      margin-bottom: 10px;
+    }
+
+    .contact-box p {
+      font-size: 15px;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    .contact-box a { color: #fff; font-weight: 700; }
+
+    hr.divider {
+      border: none;
+      border-top: 2px dashed #E8C9A8;
+      margin: 56px 0 48px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 24px;
+      font-size: 13px;
+      color: #A0785A;
+      border-top: 1px solid #E8C9A8;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="sun">☀️</div>
+  <h1>Sundog – Terms of Service</h1>
+  <p>Last updated: April 2025</p>
+</header>
+
+<div class="lang-toggle">
+  <a href="#english" class="active">English</a>
+  <a href="#espanol">Español</a>
+</div>
+
+<div class="container">
+
+  <!-- ─── ENGLISH ─────────────────────────────────────────── -->
+  <div class="lang-section" id="english">
+    <span class="lang-label">English</span>
+
+    <h2>Terms of Service</h2>
+    <p class="effective">Effective date: April 2025</p>
+
+    <div class="warning-banner">
+      <div class="icon">⚠️</div>
+      <p><strong>Health disclaimer:</strong> Sundog provides informational guidance about sun exposure only. It is not a medical application and is not a substitute for professional medical advice. Sun exposure carries inherent health risks including sunburn, skin damage, and increased risk of skin cancer. Use this app at your own risk and consult a qualified healthcare professional before making decisions about your sun exposure.</p>
+    </div>
+
+    <section class="tos-section">
+      <h3>1. Acceptance of Terms</h3>
+      <p>By downloading, installing, or using Sundog ("the App"), you agree to be bound by these Terms of Service. If you do not agree to these terms, do not use the App.</p>
+    </section>
+
+    <section class="tos-section">
+      <h3>2. Health and Medical Disclaimer</h3>
+      <p>The App provides general information and guidance about sun exposure based on UV index data, your stated skin type, and your personal goals. This information is <strong>educational and informational only</strong>.</p>
+      <p>The App is not:</p>
+      <ul>
+        <li>A medical device</li>
+        <li>A source of medical advice, diagnosis, or treatment</li>
+        <li>A substitute for consultation with a qualified dermatologist or physician</li>
+        <li>Intended to diagnose, treat, cure, or prevent any skin condition or disease</li>
+      </ul>
+      <p>Sun exposure is highly individual. Factors such as medications, medical conditions, personal health history, cloud cover, reflective surfaces, altitude, and geographic location can significantly affect how your skin responds to UV radiation in ways the App cannot account for. Always exercise personal judgment and consult a healthcare professional if you have concerns about sun exposure.</p>
+    </section>
+
+    <section class="tos-section">
+      <h3>3. Sun Exposure at Your Own Risk</h3>
+      <p>You acknowledge and agree that:</p>
+      <ul>
+        <li>Any sun exposure you undertake based on or in connection with the App is done entirely at your own risk.</li>
+        <li>The suggested exposure durations are estimates based on general guidelines and publicly available UV data. They are not personalized medical recommendations.</li>
+        <li>Sunburn, skin damage, heat illness, and other adverse effects can occur even when following the App's guidance.</li>
+        <li>You are solely responsible for protecting yourself and any minors in your care from the risks of sun exposure.</li>
+        <li>You should always apply appropriate sun protection measures (sunscreen, protective clothing, shade) based on your personal circumstances, regardless of what the App suggests.</li>
+      </ul>
+    </section>
+
+    <section class="tos-section">
+      <h3>4. App Provided "As Is"</h3>
+      <p>Sundog is provided on an "as is" and "as available" basis, without warranty of any kind. We make no representations or warranties that the App will be accurate, error-free, uninterrupted, or suitable for your particular purpose.</p>
+      <p>UV index data is sourced from third-party weather services and may be inaccurate, delayed, or unavailable. Weather conditions can change rapidly. The App's recommendations reflect conditions at the time of the last data update and may not reflect current conditions.</p>
+    </section>
+
+    <section class="liability-box">
+      <h3>5. Limitation of Liability</h3>
+      <p>To the fullest extent permitted by applicable law, the developers and distributors of Sundog shall not be liable for any direct, indirect, incidental, special, consequential, or punitive damages arising out of or related to your use of, or inability to use, the App or its content.</p>
+      <p>This includes, without limitation, any health consequences resulting from sun exposure undertaken in connection with the App, any damages resulting from inaccurate UV or weather data, any loss of data or device issues, and any other damages of any kind.</p>
+      <p>Some jurisdictions do not allow the exclusion of certain warranties or limitations of liability. In such jurisdictions, our liability is limited to the maximum extent permitted by law.</p>
+    </section>
+
+    <section class="tos-section">
+      <h3>6. Eligibility</h3>
+      <p>You must be at least 13 years of age to use Sundog. By using the App, you represent that you meet this requirement. If you are under 18, you should review these terms with a parent or guardian.</p>
+    </section>
+
+    <section class="tos-section">
+      <h3>7. Intellectual Property</h3>
+      <p>All content, design, graphics, and code within the App are the property of the Sundog developers. You may not reproduce, redistribute, or create derivative works from any part of the App without express written permission.</p>
+    </section>
+
+    <section class="tos-section">
+      <h3>8. Changes to the App and These Terms</h3>
+      <p>We reserve the right to modify or discontinue the App at any time without notice. We may also update these Terms of Service at any time. The updated terms will be effective upon posting. Continued use of the App after changes constitutes your acceptance of the new terms.</p>
+    </section>
+
+    <section class="tos-section">
+      <h3>9. Governing Law</h3>
+      <p>These Terms shall be governed by and construed in accordance with applicable law. Any disputes arising under these Terms shall be subject to the exclusive jurisdiction of the courts in the applicable jurisdiction.</p>
+    </section>
+
+    <section class="contact-box">
+      <h3>10. Contact</h3>
+      <p>For questions about these Terms of Service, please contact us at:<br />
+      <a href="mailto:legal@example.com">legal@example.com</a></p>
+    </section>
+  </div>
+
+  <hr class="divider" />
+
+  <!-- ─── ESPAÑOL ────────────────────────────────────────── -->
+  <div class="lang-section" id="espanol">
+    <span class="lang-label">Español</span>
+
+    <h2>Términos de Servicio</h2>
+    <p class="effective">Fecha de vigencia: Abril de 2025</p>
+
+    <div class="warning-banner">
+      <div class="icon">⚠️</div>
+      <p><strong>Aviso de salud:</strong> Sundog proporciona únicamente orientación informativa sobre la exposición solar. No es una aplicación médica ni sustituye el consejo médico profesional. La exposición solar conlleva riesgos de salud inherentes, incluidas quemaduras, daños en la piel y mayor riesgo de cáncer de piel. Usa esta app bajo tu propia responsabilidad y consulta a un profesional de la salud calificado antes de tomar decisiones sobre tu exposición solar.</p>
+    </div>
+
+    <section class="tos-section">
+      <h3>1. Aceptación de los términos</h3>
+      <p>Al descargar, instalar o usar Sundog ("la App"), aceptas quedar vinculado por estos Términos de Servicio. Si no estás de acuerdo con estos términos, no uses la App.</p>
+    </section>
+
+    <section class="tos-section">
+      <h3>2. Aviso de salud y médico</h3>
+      <p>La App proporciona información y orientación general sobre la exposición solar basándose en datos del índice UV, tu tipo de piel declarado y tus objetivos personales. Esta información es <strong>únicamente educativa e informativa</strong>.</p>
+      <p>La App no es:</p>
+      <ul>
+        <li>Un dispositivo médico</li>
+        <li>Una fuente de consejo, diagnóstico o tratamiento médico</li>
+        <li>Un sustituto de la consulta con un dermatólogo o médico calificado</li>
+        <li>Destinada a diagnosticar, tratar, curar o prevenir ninguna afección o enfermedad cutánea</li>
+      </ul>
+      <p>La exposición solar es muy individual. Factores como medicamentos, condiciones médicas, historial de salud personal, nubosidad, superficies reflectantes, altitud y ubicación geográfica pueden afectar significativamente la respuesta de tu piel a la radiación UV de maneras que la App no puede contemplar. Ejerce siempre tu juicio personal y consulta a un profesional de la salud si tienes dudas sobre la exposición solar.</p>
+    </section>
+
+    <section class="tos-section">
+      <h3>3. Exposición solar bajo tu propia responsabilidad</h3>
+      <p>Reconoces y aceptas que:</p>
+      <ul>
+        <li>Cualquier exposición solar que realices basándote en la App o en conexión con ella es bajo tu exclusiva responsabilidad.</li>
+        <li>Las duraciones de exposición sugeridas son estimaciones basadas en pautas generales y datos de UV públicamente disponibles. No son recomendaciones médicas personalizadas.</li>
+        <li>Las quemaduras, el daño cutáneo, las enfermedades por calor y otros efectos adversos pueden producirse incluso siguiendo las indicaciones de la App.</li>
+        <li>Eres el único responsable de protegerte a ti mismo y a los menores a tu cargo de los riesgos de la exposición solar.</li>
+        <li>Debes aplicar siempre las medidas de protección solar adecuadas (protector solar, ropa protectora, sombra) según tus circunstancias personales, independientemente de lo que sugiera la App.</li>
+      </ul>
+    </section>
+
+    <section class="tos-section">
+      <h3>4. App proporcionada "tal como está"</h3>
+      <p>Sundog se proporciona "tal como está" y "según disponibilidad", sin garantía de ningún tipo. No hacemos representaciones ni garantías de que la App sea precisa, esté libre de errores, sea ininterrumpida o sea adecuada para tu propósito particular.</p>
+      <p>Los datos del índice UV provienen de servicios meteorológicos de terceros y pueden ser inexactos, estar retrasados o no estar disponibles. Las condiciones meteorológicas pueden cambiar rápidamente. Las recomendaciones de la App reflejan las condiciones en el momento de la última actualización de datos y pueden no reflejar las condiciones actuales.</p>
+    </section>
+
+    <section class="liability-box">
+      <h3>5. Limitación de responsabilidad</h3>
+      <p>En la máxima medida permitida por la ley aplicable, los desarrolladores y distribuidores de Sundog no serán responsables de ningún daño directo, indirecto, incidental, especial, consecuente o punitivo que surja de o esté relacionado con tu uso de la App o de su contenido, o con la imposibilidad de usarla.</p>
+      <p>Esto incluye, sin limitación, cualquier consecuencia para la salud derivada de la exposición solar realizada en conexión con la App, cualquier daño resultante de datos de UV o meteorológicos inexactos, cualquier pérdida de datos o problema con el dispositivo, y cualquier otro daño de cualquier tipo.</p>
+      <p>Algunas jurisdicciones no permiten la exclusión de ciertas garantías o limitaciones de responsabilidad. En dichas jurisdicciones, nuestra responsabilidad se limita a la máxima medida permitida por la ley.</p>
+    </section>
+
+    <section class="tos-section">
+      <h3>6. Elegibilidad</h3>
+      <p>Debes tener al menos 13 años para usar Sundog. Al usar la App, declaras que cumples este requisito. Si eres menor de 18 años, debes revisar estos términos con un padre, madre o tutor.</p>
+    </section>
+
+    <section class="tos-section">
+      <h3>7. Propiedad intelectual</h3>
+      <p>Todo el contenido, diseño, gráficos y código de la App son propiedad de los desarrolladores de Sundog. No puedes reproducir, redistribuir ni crear obras derivadas de ninguna parte de la App sin permiso expreso por escrito.</p>
+    </section>
+
+    <section class="tos-section">
+      <h3>8. Cambios en la App y en estos Términos</h3>
+      <p>Nos reservamos el derecho a modificar o interrumpir la App en cualquier momento sin previo aviso. También podemos actualizar estos Términos de Servicio en cualquier momento. Los términos actualizados entrarán en vigor al publicarse. El uso continuado de la App tras los cambios constituye tu aceptación de los nuevos términos.</p>
+    </section>
+
+    <section class="tos-section">
+      <h3>9. Ley aplicable</h3>
+      <p>Estos Términos se regirán e interpretarán de conformidad con la ley aplicable. Cualquier disputa que surja en virtud de estos Términos estará sujeta a la jurisdicción exclusiva de los tribunales competentes.</p>
+    </section>
+
+    <section class="contact-box">
+      <h3>10. Contacto</h3>
+      <p>Para preguntas sobre estos Términos de Servicio, contáctanos en:<br />
+      <a href="mailto:legal@example.com">legal@example.com</a></p>
+    </section>
+  </div>
+
+</div>
+
+<footer>
+  &copy; 2025 Sundog. All rights reserved. &nbsp;·&nbsp; <a href="privacy-policy.html" style="color:#A0785A;">Privacy Policy</a>
+</footer>
+
+</body>
+</html>
